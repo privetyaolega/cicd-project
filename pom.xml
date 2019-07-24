@@ -32,12 +32,6 @@
             <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.exigen.eis</groupId>
-            <artifactId>isba</artifactId>
-            <version>10.4</version>
-        </dependency>
-
 
     </dependencies>
 

@@ -1,5 +1,5 @@
 import base.GoogleMainPage;
-import org.assertj.core.api.Assertions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -12,6 +12,6 @@ public class TestGoogleSearchFor extends GoogleMainPage {
         driver.get("https://www.google.com");
         searchFor(searchPhrase);
 
-        Assertions.assertThat(driver.getTitle()).contains(searchPhrase);
+        Assert.assertTrue(driver.getTitle().contains(searchPhrase));
     }
 }
