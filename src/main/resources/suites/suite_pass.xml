@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Pass Suite" verbose="1">
+    <test name="Pass Test">
+        <classes>
+            <class name="TestGoogleSearchFor">
+                <methods>
+                    <include name="testPass1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

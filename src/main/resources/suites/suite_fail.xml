@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Fail Suite" verbose="1">
+    <test name="Fail Test">
+        <classes>
+            <class name="TestGoogleSearchFor">
+                <methods>
+                    <include name="testFail1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
