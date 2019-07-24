@@ -25,11 +25,15 @@ public class TestGoogleSearchFor extends GoogleMainPage {
 
     @Test
     public void testPass1() {
+        System.out.println("Test is started...");
         Assert.assertTrue(true);
+        System.out.println("Test is finished...");
     }
 
     @Test
     public void testFail1() {
+        System.out.println("Test is started...");
         Assert.assertTrue(false);
+        System.out.println("Test is finished...");
     }
 }
