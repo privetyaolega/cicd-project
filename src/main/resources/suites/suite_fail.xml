@@ -5,6 +5,7 @@
         <classes>
             <class name="TestGoogleSearchFor">
                 <methods>
+                    <include name="testFail"/>
                     <include name="testFail1"/>
                 </methods>
             </class>
