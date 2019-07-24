@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <test.suite>suite</test.suite>
+        <test.suite>empty</test.suite>
     </properties>
 
     <build>
