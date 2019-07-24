@@ -9,6 +9,7 @@ import properties.loader.PropertyProvider;
 
 import java.net.MalformedURLException;
 import java.net.URI;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -29,6 +30,9 @@ public class BaseTest {
             driver = new ChromeDriver();
         }
 
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
 }

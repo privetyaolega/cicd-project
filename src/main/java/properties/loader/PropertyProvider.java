@@ -1,6 +1,7 @@
 package properties.loader;
 
-import org.apache.commons.lang.StringUtils;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Properties;
 
@@ -58,7 +59,7 @@ public class PropertyProvider {
 
         PropertyLoader loader;
         try {
-            Class<? extends PropertyLoader>  clazz = (Class<? extends PropertyLoader>) Class.forName(loaderClass);
+            Class<? extends PropertyLoader> clazz = (Class<? extends PropertyLoader>) Class.forName(loaderClass);
             loader = (PropertyLoader) clazz.newInstance();
         } catch (InstantiationException | IllegalAccessException | ClassNotFoundException var3) {
             throw new RuntimeException("Cannot instantiate property loader class " + loaderClass, var3);
